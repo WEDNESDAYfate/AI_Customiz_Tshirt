@@ -1,11 +1,13 @@
-{
+{"homepage": "http://WEDNESDAYfate.github.io/AI_Customiz_Tshirt",
   "name": "server",
   "version": "1.0.0",
   "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
